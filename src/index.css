@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #1E1E1E;
+}
+
+.MuiPaper-root.MuiMenu-paper { 
+  background-color: #2F2F2F; 
+  color: #fff;
+  
+}
+.input-label:focus{
+  color: #000;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom,  #DBB45A, #FFF6AC) ;
+  border-radius: 10px;
+}
+.nav-links{
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav-links2{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #f7f7f7 !important;
+    fill: #f7f7f7 !important;
+    stroke: #f7f7f7 !important;
+    box-sizing: border-box;
+    border-radius: 100%;
+    right: 0;
+    width: 40px;
+  height: 40px;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-links2{
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.active{
+  color: aqua;
+  text-decoration: underline;
+}
+.title{
+  background: linear-gradient(to right,  #DBB45A, #FFF6AC) ;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.swiper-pagination-bullet-active {
+  background-color: #dbb45a;
+}
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  background-color: #fff; 
+}
+.loader{
+    width: 100%;
+    height: 100%;
+    /* -webkit-animation: spin 3s linear infinite; */
+    /* -moz-animation: spin 3s linear infinite; */
+    /* animation: spin 3s linear infinite; */
+}
+/* @-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+} */
