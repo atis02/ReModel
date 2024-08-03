@@ -23,6 +23,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^14.1.0",
     "react-router-dom": "^6.22.3",
+    "react-tilt": "^1.0.2",
     "react-type-animation": "^3.2.0",
     "swiper": "^11.1.1"
   },

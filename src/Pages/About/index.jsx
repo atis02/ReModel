@@ -15,13 +15,13 @@ const About = () => {
     <Box
       id="aboutCompany"
       sx={{
-        background: "#2F2F2F",
-        height: { lg: "420px", md: "360px", sm: "300px", xs: "470px" },
+        height: { lg: "420px", md: "360px", sm: "300px", xs: "330px" },
         width: "100%",
-        backgroundImage: "url('/images/AboutHorizontal.png')",
+        // backgroundImage: "url('/images/bg.jpg')",
+
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        color: "#d6d6d6",
+        color: "#000",
 
         display: "flex",
         alignItems: { lg: "center" },
@@ -39,8 +39,12 @@ const About = () => {
       >
         <Stack sx={{ display: { lg: "block", md: "block", xs: "none" } }}>
           <img
-            src="/images/pngwing 9.png"
-            style={{ width: "530px", height: "360px" }}
+            src="/images/about.png"
+            style={{
+              width: "350px",
+              height: "400px",
+              borderRadius: "100%",
+            }}
             alt=""
           />
         </Stack>
@@ -67,6 +71,7 @@ const About = () => {
             fontSize={16}
             fontFamily="Montserrat"
             color="#fff"
+            textAlign="justify"
           >
             <Trans i18nKey="aboutCompanyText" components={{ 1: <br /> }} />
             <span className="title" style={{ fontWeight: "700" }}>

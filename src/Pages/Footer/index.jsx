@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        background: "#2F2F2F",
+        // background: "#2F2F2F",
         height: { lg: "270px", md: "100%", xs: "100%" },
         backgroundImage: "url('/images/AboutHorizontal.png')",
         backgroundRepeat: "no-repeat",
@@ -24,6 +24,7 @@ const Footer = () => {
         flexDirection: "column",
         width: "100%",
         p: { lg: "60px 0 10px 0", xs: "30px 0 10px 0" },
+        boxShadow: "0px -2px 24px -4px rgba(0,0,0,0.75)",
       }}
       id="Footer"
     >
@@ -49,7 +50,7 @@ const Footer = () => {
           mt={2}
         >
           <Stack
-            spacing={3}
+            spacing={{ lg: 3, sm: 2, md: 2.5, xs: 2 }}
             width={{ lg: "60%", md: "72%", sm: "82%", xs: "100%" }}
           >
             <Stack
@@ -67,7 +68,8 @@ const Footer = () => {
                 alt=""
               />
               <Typography fontFamily="Montserrat" fontWeight={500} width="80%">
-                {t("location")}
+                М.Петроградская Каменноостровский проспект 42
+                {/* {t("location")} */}
               </Typography>
             </Stack>
             <Stack
@@ -91,32 +93,12 @@ const Footer = () => {
                   fontFamily: "Montserrat",
                   fontWeight: 500,
                 }}
-                href="tel: +993 12 473577"
+                href="tel: 89119833108"
               >
-                +993 12 473577
+                89119833108
               </a>
             </Stack>
-            <Stack
-              data-aos="fade-down"
-              data-aos-once="true"
-              data-aos-delay="500"
-              direction="row"
-              width="100%"
-              alignItems="center"
-              spacing={1}
-              pb={{ lg: 0, xs: 3 }}
-            >
-              <img
-                src="/images/Fax.png"
-                style={{ width: 24, height: 24 }}
-                alt=""
-              />
-              <Typography width="auto" fontWeight={500} fontFamily="Montserrat">
-                +993 12 471577
-              </Typography>
-            </Stack>
-          </Stack>
-          <Stack spacing={3}>
+
             <Stack
               direction="row"
               data-aos-once="true"
@@ -136,27 +118,88 @@ const Footer = () => {
                   style={{ textDecoration: "none", color: "#fff" }}
                   href="mailto:info@altynmiras.com"
                 >
-                  info@altynmiras.com
+                  info@ReModel.com
                 </a>
               </Typography>
             </Stack>
+          </Stack>
+          <Stack spacing={{ lg: 4.3, sm: 2.3, md: 3.3, xs: 1.3 }}>
             <Stack
+              data-aos="fade-down"
+              data-aos-once="true"
+              data-aos-delay="500"
+              direction="row"
+              width="100%"
+              alignItems="center"
+              spacing={1}
+              pt={{ lg: 0, xs: 3 }}
+            >
+              <img
+                src="/images/telegram.png"
+                style={{ width: 24, height: 24 }}
+                alt=""
+              />
+              <a
+                style={{
+                  color: "#fff",
+                  textDecoration: "none",
+                  fontFamily: "Montserrat",
+                  fontWeight: 500,
+                }}
+                href="https://t.me/maerezak"
+              >
+                Telegram
+              </a>
+            </Stack>
+            <Stack
+              direction="row"
               data-aos-once="true"
               data-aos="fade-down"
-              data-aos-delay="700"
-              direction="row"
+              data-aos-delay="600"
               width="auto"
               alignItems="center"
               spacing={1}
             >
               <img
-                src="/images/Info.png"
+                src="/images/vk.png"
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
               <Typography fontFamily="Montserrat" fontWeight={500}>
-                www.altynmiras.com
+                <a
+                  style={{ textDecoration: "none", color: "#fff" }}
+                  href="https://vk.com/artagentsvoremodel"
+                >
+                  VK
+                </a>
               </Typography>
+            </Stack>
+
+            <Stack
+              data-aos-once="true"
+              data-aos="fade-down"
+              data-aos-delay="400"
+              direction="row"
+              width="100%"
+              alignItems="center"
+              spacing={1}
+            >
+              <img
+                src="/images/wApp.png"
+                style={{ width: 24, height: 24 }}
+                alt=""
+              />
+              <a
+                style={{
+                  color: "#fff",
+                  textDecoration: "none",
+                  fontFamily: "Montserrat",
+                  fontWeight: 500,
+                }}
+                href=" 89119833108"
+              >
+                89119833108
+              </a>
             </Stack>
           </Stack>
         </Stack>
@@ -170,36 +213,18 @@ const Footer = () => {
         >
           <Stack
             sx={{
-              width: { lg: 180, md: 160, xs: 150 },
-              height: { lg: 160, md: 150, xs: 140 },
-            }}
-            pl={{ lg: 0, md: 0, sm: 25, xs: 4 }}
-          >
-            <a href="https://2hac.page.link/KLFX">
-              <img
-                src="/images/image 68.png"
-                data-aos-once="true"
-                alt=""
-                data-aos="fade-down"
-                data-aos-delay="800"
-                style={{ width: "100%", height: "100%" }}
-              />
-            </a>
-          </Stack>
-          <Stack
-            sx={{
               width: { lg: 137, md: 127, xs: 117 },
               height: { lg: 126, md: 116, xs: 106 },
             }}
           >
             <a href="/">
               <img
-                src="/images/image 51.png"
+                src="/images/image 5.png"
                 data-aos-once="true"
                 data-aos="fade-down"
                 style={{ width: "100%", height: "100%" }}
                 data-aos-delay="900"
-                alt=""
+                alt="LOGO"
               />
             </a>
           </Stack>
@@ -215,18 +240,22 @@ const Footer = () => {
         data-aos-once="true"
         data-aos="fade-down"
         data-aos-delay="1000"
-        fontSize={16}
+        fontSize={{ lg: 14, md: 13, sm: 13, xs: 12 }}
         textAlign="center"
         fontFamily="Montserrat"
-        color="gray"
+        color="#fff"
         fontWeight={500}
+        pt={2}
       >
-        Copyright © {new Date().getFullYear()} Altyn Miras | Powered by{" "}
+        Copyright © {new Date().getFullYear()} ReModel | Powered by{" "}
         <a
-          href="https://alemtilsimat.com/"
-          style={{ textDecoration: "none", color: "gray" }}
+          href="https://github.com/atis02"
+          style={{
+            color: "#fff",
+            textDecoration: "underline",
+          }}
         >
-          Alem Tilsimat
+          Atamyrat Dev
         </a>
       </Typography>
     </Box>

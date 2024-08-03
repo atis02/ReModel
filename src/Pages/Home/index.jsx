@@ -12,6 +12,7 @@ import {
 import { Trans, useTranslation } from "react-i18next";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import EastIcon from "@mui/icons-material/East";
 
 const Home = () => {
   const [hiddenText, setHiddenText] = useState(false);
@@ -47,7 +48,7 @@ const Home = () => {
           <Stack
             alignItems="start"
             spacing={{ lg: 3, md: 3, sm: 3, xs: 2 }}
-            color="#d6d6d6"
+            color="#fff"
             width={{ lg: "65%", md: "85%", xs: "100%" }}
             pb={{ lg: 0, md: 0, xs: 1 }}
           >
@@ -60,7 +61,7 @@ const Home = () => {
               pt={{
                 ...(hiddenText
                   ? { lg: "100px", md: "100px", sm: "100px", xs: "60px" }
-                  : { lg: "200px", md: "150px", sm: "130px", xs: "100px" }),
+                  : { lg: "40px", md: "100px", sm: "130px", xs: "100px" }),
               }}
               pb={{ lg: "25px", md: "23px", sm: "18px", xs: "15px" }}
             >
@@ -70,11 +71,11 @@ const Home = () => {
                 width="100%"
                 data-aos-once="true"
                 fontWeight="600"
-                fontSize={{ lg: 48, md: 40, sm: 35, xs: 30 }}
+                fontSize={{ lg: 78, md: 40, sm: 35, xs: 30 }}
                 className="title"
                 fontFamily="Montserrat"
               >
-                Altyn Miras
+                ReModel
               </Typography>
 
               <Divider
@@ -88,14 +89,14 @@ const Home = () => {
                 data-aos-once="true"
                 fontFamily="Montserrat"
                 data-aos-delay="100"
-                fontSize={12}
+                fontSize={16}
               >
-                logistics company
+                Art Agency
               </Typography>
             </Stack>
             <Stack width="100%">
               <Typography
-                fontSize={14}
+                fontSize={17}
                 width="auto"
                 data-aos-once="true"
                 data-aos="fade-up"
@@ -103,15 +104,17 @@ const Home = () => {
                 fontFamily="Montserrat"
                 fontWeight={500}
               >
-                {t("company")}
+                Ребенок мечтает о карьере модели или актера и вы не знаете с
+                чего начать? Тогда вам к нам!!!
+                {/* {t("company")}
                 <span className="title" style={{ fontWeight: "700" }}>
                   {t("nameCompany")}
                 </span>{" "}
-                {t("description")}
+                {t("description")} */}
               </Typography>
               {hiddenText && (
                 <Stack
-                  fontSize={14}
+                  fontSize={17}
                   width="auto"
                   data-aos-once="true"
                   data-aos="fade-up"
@@ -121,7 +124,11 @@ const Home = () => {
                   lineHeight="1.5"
                   letterSpacing="0.00938em"
                 >
-                  <Trans i18nKey="hideDesc" components={{ 1: <br /> }} />
+                  {/* <Trans i18nKey="hideDesc" components={{ 1: <br /> }} />
+                   */}
+                  В нашей студии может заниматься любой желающий от 4 до 16 лет,
+                  независимо от роста и комплекции, главное стремиться к
+                  совершенству, а мы вам в этом поможем!
                 </Stack>
               )}
             </Stack>
@@ -141,7 +148,24 @@ const Home = () => {
               data-aos-delay="800"
             >
               {t("read")}
+              {/* Записаться */}
             </Button>
+            <span
+              className="button"
+              // onClick={() => {
+              //   navigate("/demo");
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="900"
+              // }}
+            >
+              <span className="button-background"></span>
+              <span className="button-text">
+                {" "}
+                Записаться
+                <EastIcon />
+              </span>
+            </span>
           </Stack>
           <Stack
             width={{ lg: "100%", md: "100%", sm: "50%", xs: "80%" }}
@@ -149,12 +173,23 @@ const Home = () => {
             sx={{
               ...(hiddenText && isMobile ? { display: "none" } : ""),
             }}
+            direction="row"
+            justifyContent="center"
+            pt={4}
           >
             <img
-              src="/images/pngwing 6.png"
+              src="/images/models.png"
               style={{
-                width: "100%",
-                height: "100%",
+                width: "37%",
+                height: "35%",
+              }}
+              alt="aa"
+            />
+            <img
+              src="/images/models2.png"
+              style={{
+                width: "30%",
+                height: "30%",
               }}
               alt="aa"
             />

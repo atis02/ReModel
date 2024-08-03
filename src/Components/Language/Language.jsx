@@ -51,7 +51,7 @@ export default function Language() {
     i18n.language === "ru"
       ? {
           color: "#fff",
-          backgroundColor: "#666666",
+          backgroundColor: "#78C1C4",
           "&:hover": { backgroundColor: "#666666" },
         }
       : {};
@@ -59,7 +59,7 @@ export default function Language() {
     i18n.language === "en"
       ? {
           color: "#fff",
-          backgroundColor: "#666666",
+          backgroundColor: "#78C1C4",
           "&:hover": { backgroundColor: "#666666" },
         }
       : {};

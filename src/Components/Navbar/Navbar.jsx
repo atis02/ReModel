@@ -60,7 +60,7 @@ const Navbar = () => {
       position="sticky"
       top={0}
       zIndex="1000"
-      backgroundColor="#1E1E1E"
+      backgroundColor="transparent"
       p={{
         lg: "10px 185px 0 185px",
         md: "5px 100px 0 100px",
@@ -68,7 +68,12 @@ const Navbar = () => {
       }}
       sx={{
         ...(scrolled
-          ? { boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.75)" }
+          ? {
+              boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.75)",
+              backdropFilter: "blur(10px)",
+              opacity: "80%",
+              backgroundColor: "#1D87D3",
+            }
           : { boxShadow: "0" }),
       }}
     >
@@ -78,9 +83,9 @@ const Navbar = () => {
       >
         <a href="/">
           <img
-            src="/images/Logo.png"
+            src="/images/Log.png"
             style={{ width: "100%", height: "100%", pt: 5 }}
-            alt=""
+            alt="LOGO"
           />
         </a>
       </Stack>
@@ -90,16 +95,29 @@ const Navbar = () => {
         sx={{
           ...(isMobile ? { display: "none" } : { display: "flex" }),
           gap: "30px",
+          // pr: "20px",
         }}
       >
-        <a
-          className="nav-links2"
-          style={{ color: "#fff" }}
-          href="#aboutCompany"
-        >
+        <a className="nav-links2" href="#aboutCompany">
           {t("aboutCompany")}
         </a>
-        <Box sx={{ minWidth: 90 }}>
+        <a className="nav-links2" href="#Advantages">
+          {t("advantagesNav")}
+        </a>
+        <a className="nav-links2" href="">
+          Отзывы
+        </a>
+        <a className="nav-links2" href="#Models">
+          Модели
+        </a>
+        <a className="nav-links2" href="#pokaz">
+          {/* {t("ourWorks")} */}
+          Показы
+        </a>
+        <a className="nav-links2" href="#Goals">
+          Программа обучения
+        </a>
+        {/* <Box sx={{ minWidth: 90 }}>
           <Stack
             cursor="pointer"
             variant="text"
@@ -131,6 +149,7 @@ const Navbar = () => {
               }}
             />
           </Stack>
+
           <Menu
             id="basic-menu"
             anchorEl={anchorEl}
@@ -200,8 +219,8 @@ const Navbar = () => {
               </a>
             </MenuItem>
           </Menu>
-        </Box>
-        <a className="nav-links2" style={{ color: "#fff" }} href="#Footer">
+        </Box> */}
+        <a className="nav-links2" href="#Footer">
           {t("contacts")}
         </a>
         <Language />

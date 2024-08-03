@@ -13,14 +13,14 @@ const resources = {
       ourWorks: "Photo gallery",
       contacts: "Contacts",
       read: "Read More",
-      nameCompany: " “Altyn Miras” ",
+      nameCompany: " “ReModel” ",
       company: "Our company",
       description:
         "was founded in 2021. In this short time-period, our company has accumulated extensive experience and has created a wide network of partners around the world to carry out import, export and transit shipments. ",
       hideDesc:
         "We are professionals in the field of transportation organization and at present we provide a full spectrum of cargo delivery services related to container, sea, railway, road and air transportation across Europe and Asia, as well as the transportation of dangerous goods and temperature-controlled goods.<1/> Despite the fact that we are a young and developing company, we can confidently establish ourselves as a responsible, honest, reliable and Your professional partner in the field of logistics. ",
       aboutCompanyText:
-        "We are experts in the field of transportation organization and today we provide a full range of cargo delivery services from anywhere in the world. We offer “door to door” delivery services, as well as other operations included within this service.<1/> All stages of the supply chain are carefully controlled by our specialists. Experienced specialists of ",
+        "Our kid`s model agency is dedicated to discovering and nurturing young talent, providing them with opportunities in fashion, advertising, television, and more. At",
       aboutCompanyText2:
         " company are always ready to calculate various transportation options, provide information about the cargo location, planned delivery date, and provide assistance in registration of all necessary permits.",
       advantages: "Advantages",
@@ -98,15 +98,15 @@ const resources = {
   },
   ru: {
     translation: {
-      aboutCompany: "О компании",
+      aboutCompany: "О нас",
       pages: "Страницы",
-      advantages: "Преимущества",
+      advantagesNav: "Преимущества",
       goals: "Миссия и цели",
       services: "Услуги компании",
       licences: "Лицензии",
-      ourWorks: "Наши работы",
+      ourWorks: "Проекты",
       contacts: "Контакты",
-      nameCompany: " “Алтын Мирас” ",
+      nameCompany: " “ReModel” ",
       read: "Читать",
       company: "Компания",
       description:
@@ -114,23 +114,18 @@ const resources = {
       hideDesc:
         "Мы являемся профессионалами в области организации перевозки и на сегодняшний день оказываем полный спектр услуг, связанных с контейнерными, морскими, железнодорожными, автомобильными и авиаперевозками  по странам Европы и Азии, а также перевозкой опасных грузов и грузов с температурным режимом.<1/>Несмотря на то, что мы являемся молодой и развивающейся компанией, мы с уверенностью можем зарекомендовать себя, как ответственного, добросовестного, надёжного и профессионального - Вашего партнёра в сфере логистики!",
       aboutCompanyText:
-        "Мы предлагаем услуги по доставке  “от двери до двери” а также отдельные операции, входящие в данный сервис. Все этапы логистической цепи  тщательно контролируются нашими специалистами. <1/> Опытные    специалисты   компании  ",
+        "Наше детское модельное агентство посвящено открытию и развитию молодых талантов, предоставляя им возможности в сфере моды, рекламы, телевидения и многом другом. В ",
       aboutCompanyText2:
-        "  всегда   готовы рассчитать различные варианты перевозок, предоставлять информацию о  местонахождении  груза,  о  планируемой  дате  доставки,  помощь  в оформлении всех необходимых разрешительных документов.",
-      advantages: "Преимущества",
-      advText1:
-        "У наших специалистов более 10 лет опыта в международных грузоперевозках.",
-      advText2:
-        "Обширная география. Достaвляем грузы по странам Европы и Азии.",
-      advText3:
-        "Индивидуальный подход. Подберем наилучший способ доставки , исходя из особенностей вашего груза. ",
-      advText4:
-        "Умеем находить новые решения логистических процессов, что особенно актуально в современных реалиях.",
-      advText5:
-        "Оптимизируем маршрут, чтобы максимально ускорить перевозку и снизить стоимость доставки. Мы всегда стремимся сохранить ресурсы наших клиентов.",
-      advText6:
-        "Качественный сервис. Уделяем особое внимание аккуратной загрузке, выгрузке и креплению грузов. Гарантируем сохранность и отсутствие повреждений.",
-      advText7: "Квалифицированная помощь в оформлении таможенных документов.",
+        "мы верим, что каждый ребенок уникален и заслуживает шанса проявить себя в индустрии моделинга. С многолетним опытом работы в отрасли, наше агентство гордится профессионализмом, честностью и индивидуальным подходом к карьере каждого ребенка.",
+      advantages: "После обучения ваш ребенок получит:",
+      advText1: "Эстетическое развитие ",
+      advText2: "Уверенность в себе",
+      advText3: "Работа с камерой ",
+      advText4: "Подиумный шаг ",
+      advText5: "Актерское мастерство и самопрезентация ",
+      advText6: "Модные показы ",
+      advText7: "Кастинги ",
+      advText8: "Практика в журналистике и репортажах.",
       missionsGoals: "Миссии и цели",
       missionsCompany: "Миссия компании",
       missionText: "Организация высокоэффективных бизнес процессов :",
@@ -191,7 +186,7 @@ const resources = {
 };
 i18n.use(initReactI18next).init({
   resources,
-  fallbackLng: "en",
+  fallbackLng: "ru",
   lng: localStorage.getItem("lng"),
   interpolation: {
     escapeValue: false,

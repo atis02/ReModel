@@ -16,6 +16,7 @@ const Advantages = () => {
         width: "100%",
         height: "auto",
         color: "#fff",
+        mb: "50px",
       }}
       id="Advantages"
     >
@@ -61,17 +62,17 @@ const Advantages = () => {
           >
             <img
               style={{
-                width: "100%",
-                height: "100%",
+                width: "60%",
+                height: "60%",
               }}
-              src="/images/Map.png"
+              src="/images/boyModel.png"
               alt=""
             />
           </Stack>
           <Stack
             width={{ lg: "60%", md: "70%", sm: "75%", xs: "100%" }}
-            spacing={1}
-            mt={{ xs: 2 }}
+            // spacing={1}
+            mt={{ xs: 1 }}
             p={{ lg: 0, md: 0, xs: 1 }}
           >
             <Stack
@@ -214,6 +215,26 @@ const Advantages = () => {
                 7
               </Typography>
               {t("advText7")}
+            </Stack>
+            <Stack
+              fontSize={15}
+              color="#d6d6d6"
+              fontWeight={500}
+              direction="row"
+              data-aos-once="true"
+              data-aos="fade-up"
+              data-aos-delay="950"
+              alignItems="center"
+            >
+              <Typography
+                fontSize={{ lg: 43, md: 37, xs: 30 }}
+                fontFamily="Poppins"
+                color="#dbb45a"
+                mr={2}
+              >
+                8
+              </Typography>
+              {t("advText8")}
             </Stack>
           </Stack>
         </Stack>

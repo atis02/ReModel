@@ -14,7 +14,7 @@ import Advantages from "./Pages/Advantages";
 import Missions from "./Pages/Missions";
 import Services from "./Pages/Services";
 import Licence from "./Pages/Licences";
-import OurWorks from "./Pages/OurWorks";
+import Models from "./Pages/OurWorks";
 import Footer from "./Pages/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import { Suspense, useEffect, useState } from "react";
@@ -52,15 +52,21 @@ function App() {
       ) : (
         <Suspense fallback={<CircularProgress />}>
           <Box
+            // sx={{
+            //   background: "#1E1E1E",
+            // }}
             sx={{
-              background: "#1E1E1E",
+              backgroundImage: "url('/images/bg.jpg')",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
             }}
           >
             <Box
               sx={{
-                backgroundImage: "url('/images/AllHeight.png')",
+                backgroundImage: "url('/images/bg.jpg')",
+
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "contain",
+                backgroundSize: "cover",
               }}
             >
               <Navbar />
@@ -69,8 +75,7 @@ function App() {
               <Advantages />
               <Missions />
               <Services />
-              <Licence />
-              <OurWorks />
+              <Models />
               <Footer />
             </Box>
           </Box>
