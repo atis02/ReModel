@@ -39,7 +39,7 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: #1d5e9e !important;
+    background-color: #d03d08 !important;
     background-color: rgba(255, 255, 255, 0.5);
     color: #f7f7f7 !important;
     fill: #f7f7f7 !important;
@@ -65,14 +65,16 @@
   font-size: 18px;
 }
 .nav-links2:hover{
-  color: #ffe100;
+  background: linear-gradient(to right,  #d7c248, #e54b29) ;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
 }
 .active{
   color: aqua;
   text-decoration: underline;
 }
 .title{
-  background: linear-gradient(to right,  #DBB45A, #FFF6AC) ;
+  background: linear-gradient(to right,  #ffe868, #e54b29) ;
   background-clip:text;
   -webkit-text-fill-color: transparent;
 }
@@ -102,21 +104,23 @@
 .button {
   padding:0 1rem;
   position: relative;
- width: 273px;
  border-radius: 25px;
  border: "none";
 
   min-height: 60px;
+  transition: all ease 0.7s;
   margin-top: 30px;
 }
-
+.button:hover{
+  transform: scale(105%);
+}
 .button-text {
  position: absolute;
  top: 0;
  right: 0;
  bottom: 0;
  left: 0;
- background:#1d5e9e;
+ background: linear-gradient(to right,  #d7c248, #e74d2a);
  /* background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,224,255,1) 100%); */
  border: "none";
  border-radius: 25px;
@@ -141,18 +145,32 @@ font-size: 20px;
  border: "none";
  left: 2px;
   border-radius: 45px;
- background: linear-gradient(-90deg, #007cf0, #00df34,#f79000,#fff,#ff0000, #007cf0);
- background-size: 500% 600%;
+ background: linear-gradient(-90deg, #007cf0, #00dfd8,#00a8f7,#fff,#ff0080, #007cf0);
+ background-size: 400% 100%;
  padding: 0;
  margin: 0;
  animation: backgroundAnimation 8s ease-in-out infinite
 }
+.button:hover >.button-background{
+  position: absolute;
+  top: -1px;
+  right: 1px;
+  bottom: 1px;
+  border: "none";
+  left: 1px;
+   border-radius: 45px;
+   background: linear-gradient(to right,  #d7c248, #e74d2a);
 
+  background-size: 400% 100%;
+  padding: 0;
+  margin: 0;
+  animation: backgroundAnimation 100s ease-in-out infinite
+ }
 
 @keyframes backgroundAnimation {
  50% {
-  background-position: 140% 60%;
-  transform: skew(-10deg)
+  background-position: 140% 50%;
+  transform: skew(-2deg)
  }
 }
 
@@ -168,7 +186,7 @@ font-size: 20px;
  right: 0;
  top: 7px;
  height: 90%;
- filter: blur(1.6rem)
+ filter: blur(.9rem)
 };
 
 

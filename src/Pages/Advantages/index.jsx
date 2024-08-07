@@ -12,7 +12,7 @@ const Advantages = () => {
   return (
     <Box
       sx={{
-        pt: { lg: "80px", md: "40px", xs: "5px" },
+        pt: { lg: "80px", md: "40px", xs: "60px" },
         width: "100%",
         height: "auto",
         color: "#fff",

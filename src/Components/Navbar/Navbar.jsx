@@ -60,7 +60,7 @@ const Navbar = () => {
       position="sticky"
       top={0}
       zIndex="1000"
-      backgroundColor="transparent"
+      backgroundColor="#1E1E1E"
       p={{
         lg: "10px 185px 0 185px",
         md: "5px 100px 0 100px",
@@ -71,8 +71,8 @@ const Navbar = () => {
           ? {
               boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.75)",
               backdropFilter: "blur(10px)",
-              opacity: "80%",
-              backgroundColor: "#1D87D3",
+              opacity: "95%",
+              backgroundColor: "#1E1E1E",
             }
           : { boxShadow: "0" }),
       }}

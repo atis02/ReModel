@@ -65,20 +65,21 @@ const Missions = () => {
         <Stack
           width={{ lg: "100%", md: "100%", sm: "90%", xs: "100%" }}
           height={{
-            lg: i18n.language === "ru" ? "300px" : "200px",
+            lg: i18n.language === "ru" ? "250px" : "200px",
             md: "100%",
             sm: "100%",
-            xs: "250px",
+            xs: "210px",
           }}
           sx={{
-            backgroundColor: "#1D5E9E",
+            backgroundColor: "#2F2F2F",
           }}
           p={{ lg: "20px", md: "20px", sm: "20px", xs: "20px" }}
-          border="5px solid #00E0FF"
+          border="5px solid #303030"
           borderRadius="20px"
           className="inner-border"
           mb={2}
-          justifyContent="center"
+          mt={2}
+          // justifyContent="center"
         >
           <Typography
             color="#fff"

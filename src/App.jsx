@@ -52,21 +52,20 @@ function App() {
       ) : (
         <Suspense fallback={<CircularProgress />}>
           <Box
-            // sx={{
-            //   background: "#1E1E1E",
-            // }}
             sx={{
-              backgroundImage: "url('/images/bg.jpg')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
+              background: "#1E1E1E",
             }}
+            // sx={{
+            //   backgroundImage: "url('/images/bg.jpg')",
+            //   backgroundRepeat: "no-repeat",
+            //   backgroundSize: "contain",
+            // }}
           >
             <Box
               sx={{
-                backgroundImage: "url('/images/bg.jpg')",
-
+                backgroundImage: "url('/images/AllHeight.png')",
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
+                backgroundSize: "contain",
               }}
             >
               <Navbar />

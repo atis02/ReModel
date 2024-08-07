@@ -133,31 +133,13 @@ const Home = () => {
               )}
             </Stack>
             <Button
-              onClick={() => setHiddenText(!hiddenText)}
               sx={{
-                fontFamily: "Montserrat",
-                width: "125px",
-                heigth: "40px",
-                background: "#DBB45A",
-                color: "#fff",
-                borderRadius: "26px",
-                textTransform: "capitalize",
+                width: { lg: "273px", md: "273px", sm: "273px", xs: "183px" },
               }}
               data-aos="fade-up"
               data-aos-once="true"
               data-aos-delay="800"
-            >
-              {t("read")}
-              {/* Записаться */}
-            </Button>
-            <span
               className="button"
-              // onClick={() => {
-              //   navigate("/demo");
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="900"
-              // }}
             >
               <span className="button-background"></span>
               <span className="button-text">
@@ -165,7 +147,7 @@ const Home = () => {
                 Записаться
                 <EastIcon />
               </span>
-            </span>
+            </Button>
           </Stack>
           <Stack
             width={{ lg: "100%", md: "100%", sm: "50%", xs: "80%" }}
