@@ -22,16 +22,24 @@ const Models = () => {
   const { t } = useTranslation();
 
   const slideData = [
-    { title: "Василиса", src: "/images/models (1).jpg" },
-    { title: " Полина", src: "/images/models (2).jpg" },
     { title: "Анна ", src: "/images/models (3).jpg" },
     { title: "Виктория", src: "/images/models (4).jpg" },
-    { title: "Ева ", src: "/images/models (5).jpg" },
-    { title: "Вероника   ", src: "/images/models (6).jpg" },
-    { title: "Карина ", src: "/images/models (7).jpg" },
-    { title: " Лиза", src: "/images/models (8).jpg" },
-    { title: " София", src: "/images/models (9).jpg" },
-    { title: "Дарья ", src: "/images/models (10).jpg" },
+
+    { title: "Анастасия", src: "/images/KIdModels (1).jpg" },
+    { title: " Алина", src: "/images/KIdModels (2).jpg" },
+    { title: " Полина", src: "/images/KIdModels (3).jpg" },
+    { title: " Василиса", src: "/images/KIdModels (4).jpg" },
+    { title: "Полина ", src: "/images/KIdModels (5).jpg" },
+    { title: "Солмаз", src: "/images/KIdModels (6).jpg" },
+    { title: "Валерия", src: "/images/KIdModels (7).jpg" },
+    { title: " Валерия", src: "/images/KIdModels (8).jpg" },
+    { title: " Валерия", src: "/images/KIdModels (9).jpg" },
+    { title: "Алина", src: "/images/KIdModels (10).jpg" },
+    { title: "Ксения ", src: "/images/KIdModels (11).jpg" },
+    { title: "Полина ", src: "/images/KIdModels (12).jpg" },
+    { title: "Полина ", src: "/images/KIdModels (13).jpg" },
+    { title: "Милана ", src: "/images/KIdModels (14).jpg" },
+    { title: "Кира ", src: "/images/KIdModels (15).jpg" },
   ];
   return (
     <Box

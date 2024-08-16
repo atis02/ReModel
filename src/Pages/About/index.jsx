@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import Aos from "aos";
 import { Trans, useTranslation } from "react-i18next";
 
@@ -15,7 +15,7 @@ const About = () => {
     <Box
       id="aboutCompany"
       sx={{
-        height: { lg: "420px", md: "360px", sm: "300px", xs: "330px" },
+        height: { lg: "420px", md: "360px", sm: "300px", xs: "530px" },
         width: "100%",
         // backgroundImage: "url('/images/bg.jpg')",
 
@@ -37,48 +37,55 @@ const About = () => {
           height: "auto",
         }}
       >
-        <Stack sx={{ display: { lg: "block", md: "block", xs: "none" } }}>
-          <img
-            src="/images/about.png"
-            style={{
-              width: "350px",
-              height: "400px",
-              borderRadius: "100%",
-            }}
-            alt=""
-          />
-        </Stack>
-        <Stack
-          width={560}
-          height={145}
-          spacing={2}
-          mt={{ lg: 0, md: 1, xs: 1 }}
-        >
-          <Typography
-            fontSize={24}
-            fontWeight={700}
-            data-aos="fade-up"
-            data-aos-delay="200"
-            fontFamily="Montserrat"
-            pt={{ lg: "50px", md: "30px", xs: "10px" }}
-            className="title"
+        <Stack direction={{ lg: "row", md: "row", sm: "row", xs: "column" }}>
+          <Stack
+            width={{ lg: 600, md: 500, sm: 400, xs: 350 }}
+            height={{ lg: 400, md: 350, sm: 300, xs: 250 }}
           >
-            {t("aboutCompany")}
-          </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="400"
-            fontSize={16}
-            fontFamily="Montserrat"
-            color="#fff"
-            textAlign="justify"
+            <img
+              src="/images/about2.png"
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+              alt=""
+            />
+          </Stack>
+          <Stack
+            width={{ lg: 560, xs: "100%" }}
+            height={145}
+            spacing={2}
+            mt={{ lg: 0, md: 1, xs: 1 }}
           >
-            <Trans i18nKey="aboutCompanyText" components={{ 1: <br /> }} />
+            <Typography
+              fontSize={24}
+              fontWeight={700}
+              data-aos="fade-up"
+              data-aos-delay="200"
+              fontFamily="Montserrat"
+              pt={{ lg: "50px", md: "30px", xs: "10px" }}
+              className="title"
+            >
+              {t("aboutCompany")}
+            </Typography>
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="400"
+              fontSize={16}
+              fontFamily="Montserrat"
+              color="#fff"
+              textAlign="justify"
+            >
+              {/* <Trans i18nKey="aboutCompanyText" components={{ 1: <br /> }} />
             <span className="title" style={{ fontWeight: "700" }}>
               {t("nameCompany")}
             </span>{" "}
-            {t("aboutCompanyText2")}
-          </Typography>
+            {t("aboutCompanyText2")} */}
+              Авторская методика преподавания разработана и адаптирована для
+              детей от 4 лет до 16 лет, независимо от роста и комплекции,
+              главное стремиться к совершенству, а мы вам в этом поможем.
+            </Typography>
+          </Stack>
         </Stack>
       </Container>
     </Box>

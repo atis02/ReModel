@@ -60,7 +60,7 @@ const Navbar = () => {
       position="sticky"
       top={0}
       zIndex="1000"
-      backgroundColor="#1E1E1E"
+      backgroundColor="transparent"
       p={{
         lg: "10px 185px 0 185px",
         md: "5px 100px 0 100px",
@@ -74,7 +74,10 @@ const Navbar = () => {
               opacity: "95%",
               backgroundColor: "#1E1E1E",
             }
-          : { boxShadow: "0" }),
+          : {
+              boxShadow: "0",
+              backgroundColor: "transparent",
+            }),
       }}
     >
       <Stack
@@ -104,122 +107,19 @@ const Navbar = () => {
         <a className="nav-links2" href="#Advantages">
           {t("advantagesNav")}
         </a>
-        <a className="nav-links2" href="">
+        <a className="nav-links2" href="#Feedback">
           Отзывы
         </a>
-        <a className="nav-links2" href="#Models">
-          Модели
-        </a>
         <a className="nav-links2" href="#pokaz">
-          {/* {t("ourWorks")} */}
           Показы
+        </a>
+        <a className="nav-links2" href="#Models">
+          {/* {t("ourWorks")} */}
+          Модели
         </a>
         <a className="nav-links2" href="#Goals">
           Программа обучения
         </a>
-        {/* <Box sx={{ minWidth: 90 }}>
-          <Stack
-            cursor="pointer"
-            variant="text"
-            direction="row"
-            alignItems="center"
-            justifyContent="center"
-            onClick={handleClick}
-            sx={{
-              cursor: "pointer",
-              color: "#000",
-              gap: { lg: "2px", md: "3px", xs: 0 },
-            }}
-            minHeight="32px"
-          >
-            <Typography
-              color="#fff"
-              fontFamily="Montserrat"
-              fontWeight={500}
-              fontSize={18}
-            >
-              {t("pages")}
-            </Typography>
-            <KeyboardArrowDownIcon
-              sx={{
-                color: "#fff",
-                ...(open ? { transform: "rotate(180deg)" } : ""),
-                width: { lg: 24, md: 20, xs: 18 },
-                height: { lg: 24, md: 20, xs: 18 },
-              }}
-            />
-          </Stack>
-
-          <Menu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            sx={{ zIndex: "100000", position: "fixed", width: "100%" }}
-            MenuListProps={{
-              "aris-labelledby": "basic-button",
-              sx: {
-                backgroundColor: "#2F2F2F",
-                "&& .Mui-selected": {
-                  backgroundColor: "#666666",
-                  zIndex: "10000",
-                },
-              },
-            }}
-          >
-            <MenuItem
-              sx={{
-                "&:hover": { backgroundColor: "#666666" },
-                width: 175,
-              }}
-              value="Преимущества"
-            >
-              <a className="nav-links" href="#Advantages">
-                {t("advantages")}
-              </a>
-            </MenuItem>
-            <MenuItem
-              sx={{
-                "&:hover": { backgroundColor: "#666666" },
-              }}
-              value="Миссия и цели"
-            >
-              <a className="nav-links" href="#Goals">
-                {t("goals")}
-              </a>
-            </MenuItem>
-            <MenuItem
-              sx={{
-                "&:hover": { backgroundColor: "#666666" },
-              }}
-              value="Услуги компании"
-            >
-              <a className="nav-links" href="#Services">
-                {t("services")}
-              </a>
-            </MenuItem>
-            <MenuItem
-              sx={{
-                "&:hover": { backgroundColor: "#666666" },
-              }}
-              value="Лицензии"
-            >
-              <a className="nav-links" href="#Licences">
-                {t("licences")}
-              </a>
-            </MenuItem>
-            <MenuItem
-              sx={{
-                "&:hover": { backgroundColor: "#666666" },
-              }}
-              value="Наши работы"
-            >
-              <a className="nav-links" href="#OurWorks">
-                {t("ourWorks")}
-              </a>
-            </MenuItem>
-          </Menu>
-        </Box> */}
         <a className="nav-links2" href="#Footer">
           {t("contacts")}
         </a>

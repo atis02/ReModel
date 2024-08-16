@@ -13,6 +13,7 @@ import { Trans, useTranslation } from "react-i18next";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import EastIcon from "@mui/icons-material/East";
+import ReactPlayer from "react-player";
 
 const Home = () => {
   const [hiddenText, setHiddenText] = useState(false);
@@ -31,6 +32,9 @@ const Home = () => {
           pt: "25px",
           width: "100%",
           height: "90vh",
+          top: 0,
+          zIndex: "100",
+          position: "sticky",
         }}
       >
         <Stack
@@ -42,7 +46,7 @@ const Home = () => {
           }}
           alignItems="center"
           width="auto"
-          heigh="100%"
+          height="90%"
           justifyContent="center"
         >
           <Stack
@@ -58,11 +62,11 @@ const Home = () => {
               spacing={2}
               width={{ lg: "90%", md: "80%", sm: "70%", xs: "100%" }}
               height={35}
-              pt={{
-                ...(hiddenText
-                  ? { lg: "100px", md: "100px", sm: "100px", xs: "60px" }
-                  : { lg: "40px", md: "100px", sm: "130px", xs: "100px" }),
-              }}
+              // pt={{
+              //   ...(hiddenText
+              //     ? { lg: "100px", md: "100px", sm: "100px", xs: "60px" }
+              //     : { lg: "70px", md: "100px", sm: "130px", xs: "100px" }),
+              // }}
               pb={{ lg: "25px", md: "23px", sm: "18px", xs: "15px" }}
             >
               <Typography
@@ -71,11 +75,11 @@ const Home = () => {
                 width="100%"
                 data-aos-once="true"
                 fontWeight="600"
-                fontSize={{ lg: 78, md: 40, sm: 35, xs: 30 }}
+                fontSize={{ lg: 78, md: 40, sm: 35, xs: 50 }}
                 className="title"
                 fontFamily="Montserrat"
               >
-                ReModel
+                REmodel
               </Typography>
 
               <Divider
@@ -104,8 +108,8 @@ const Home = () => {
                 fontFamily="Montserrat"
                 fontWeight={500}
               >
-                Ребенок мечтает о карьере модели или актера и вы не знаете с
-                чего начать? Тогда вам к нам!!!
+                Детское модельное Арт-Агентство в Санкт-Петербурге. Приглашает
+                на занятия детей и подростков в модельную студию .
                 {/* {t("company")}
                 <span className="title" style={{ fontWeight: "700" }}>
                   {t("nameCompany")}
@@ -126,20 +130,19 @@ const Home = () => {
                 >
                   {/* <Trans i18nKey="hideDesc" components={{ 1: <br /> }} />
                    */}
-                  В нашей студии может заниматься любой желающий от 4 до 16 лет,
-                  независимо от роста и комплекции, главное стремиться к
-                  совершенству, а мы вам в этом поможем!
+                  Авторская методика преподавания разработана и адаптирована для
+                  детей от 4 лет до 16 лет, независимо от роста и комплекции,
+                  главное стремиться к совершенству, а мы вам в этом поможем.
                 </Stack>
               )}
             </Stack>
-            <Button
-              sx={{
-                width: { lg: "273px", md: "273px", sm: "273px", xs: "183px" },
-              }}
+            <a
+              href="https://wa.me/+79119833108?text=Добрый%20день,%20меня%20заинтересовало%20обучение%20в%20Арт-Агентстве"
+              target="_blank"
+              className="button"
               data-aos="fade-up"
               data-aos-once="true"
               data-aos-delay="800"
-              className="button"
             >
               <span className="button-background"></span>
               <span className="button-text">
@@ -147,31 +150,24 @@ const Home = () => {
                 Записаться
                 <EastIcon />
               </span>
-            </Button>
+            </a>
           </Stack>
           <Stack
-            width={{ lg: "100%", md: "100%", sm: "50%", xs: "80%" }}
-            hegiht={{ lg: "100%", md: "100%", sm: "50%", xs: "80%" }}
+            width={{ lg: "80%", md: "100%", sm: "100%", xs: "60%" }}
+            height={{ lg: "70%", md: "70%", sm: "60%", xs: "60%" }}
             sx={{
-              ...(hiddenText && isMobile ? { display: "none" } : ""),
+              ...(isMobile ? { display: "none" } : ""),
             }}
             direction="row"
-            justifyContent="center"
-            pt={4}
+            justifyContent={{ lg: "flex-end" }}
+            // pt={4}
           >
             <img
-              src="/images/models.png"
+              src="/images/about.png"
               style={{
-                width: "37%",
-                height: "35%",
-              }}
-              alt="aa"
-            />
-            <img
-              src="/images/models2.png"
-              style={{
-                width: "30%",
-                height: "30%",
+                width: "80%",
+                height: "100%",
+                borderRadius: "100px",
               }}
               alt="aa"
             />

@@ -43,7 +43,9 @@ const Advantages = () => {
             fontFamily="Montserrat"
             data-aos-delay="200"
           >
-            {t("advantages")}
+            {/* {t("advantages")}
+             */}
+            После занятий в REmodel Ваш ребенок получит :
           </Typography>
         </Stack>
         <Stack
@@ -70,8 +72,8 @@ const Advantages = () => {
             />
           </Stack>
           <Stack
-            width={{ lg: "60%", md: "70%", sm: "75%", xs: "100%" }}
-            // spacing={1}
+            width={{ lg: "88%", md: "70%", sm: "75%", xs: "100%" }}
+            spacing={2}
             mt={{ xs: 1 }}
             p={{ lg: 0, md: 0, xs: 1 }}
           >
@@ -84,6 +86,9 @@ const Advantages = () => {
               data-aos-delay="300"
               alignItems="center"
               color="#d6d6d6"
+              textAlign="justify"
+
+              // spacing={2}
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
@@ -94,7 +99,22 @@ const Advantages = () => {
               >
                 1
               </Typography>
-              {t("advText1")}
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 23, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  fontWeight={500}
+                  pl={0.5}
+                  mb={1}
+                >
+                  {t("advText1")}
+                </Typography>
+                Улучшит свои коммуникативные навыки и станет более уверенным в
+                себе . Это поможет ему не только в модельной карьере, но и в
+                повседневной жизни
+              </Stack>
             </Stack>
             <Stack
               data-aos="fade-up"
@@ -102,6 +122,7 @@ const Advantages = () => {
               fontSize={15}
               data-aos-once="true"
               direction="row"
+              textAlign="justify"
               fontWeight={500}
               color="#d6d6d6"
               alignItems="center"
@@ -114,12 +135,28 @@ const Advantages = () => {
               >
                 2
               </Typography>
-              {t("advText2")}
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 23, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  mb={1}
+                  fontWeight={500}
+                >
+                  {t("advText2")}
+                </Typography>
+                Улучшит свои коммуникативные навыки и станет более уверенным в
+                себе . Это поможет ему не только в модельной карьере, но и в
+                повседневной жизни
+              </Stack>
             </Stack>
             <Stack
               data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="500"
+              textAlign="justify"
               fontSize={15}
               color="#d6d6d6"
               direction="row"
@@ -134,11 +171,26 @@ const Advantages = () => {
               >
                 3
               </Typography>
-              {t("advText3")}
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 23, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  fontWeight={500}
+                >
+                  {t("advText3")}
+                </Typography>
+                Примет участие в профессиональной съемке,и будет блистать на
+                съемочной площадке. Это ценный опыт и пополнение портфолио
+                качественными материалами.
+              </Stack>
             </Stack>
             <Stack
               data-aos-once="true"
               data-aos="fade-up"
+              textAlign="justify"
               data-aos-delay="600"
               color="#d6d6d6"
               fontSize={15}
@@ -154,12 +206,26 @@ const Advantages = () => {
               >
                 4
               </Typography>
-              {t("advText4")}
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 23, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  fontWeight={500}
+                >
+                  {t("advText4")}
+                </Typography>
+                Научится держать осанку, владеть своим телом и мимикой лица.
+                Обретет уверенность в своих действиях и движениях
+              </Stack>
             </Stack>
             <Stack
               data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="700"
+              textAlign="justify"
               fontSize={15}
               color="#d6d6d6"
               direction="row"
@@ -174,11 +240,26 @@ const Advantages = () => {
               >
                 5
               </Typography>
-              {t("advText5")}
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 23, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  fontWeight={500}
+                >
+                  {t("advText5")}
+                </Typography>
+                Получит базовые знания и навыки, которые помогут в освоении
+                профессии модели и сформируют нужный подход к работе. Научится
+                работать в команде, быть ответственным за свои обязанности.
+              </Stack>
             </Stack>
             <Stack
               data-aos-once="true"
               data-aos="fade-up"
+              textAlign="justify"
               data-aos-delay="800"
               color="#d6d6d6"
               fontSize={15}
@@ -194,9 +275,22 @@ const Advantages = () => {
               >
                 6
               </Typography>
-              {t("advText6")}
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 23, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  fontWeight={500}
+                >
+                  {t("advText6")}
+                </Typography>
+                Раскроет свой потенциал и достигнет успеха в Fashion индустрии,
+                благодаря индивидуальному подходу преподавателей.
+              </Stack>
             </Stack>
-            <Stack
+            {/* <Stack
               fontSize={15}
               color="#d6d6d6"
               fontWeight={500}
@@ -235,7 +329,7 @@ const Advantages = () => {
                 8
               </Typography>
               {t("advText8")}
-            </Stack>
+            </Stack> */}
           </Stack>
         </Stack>
       </Container>

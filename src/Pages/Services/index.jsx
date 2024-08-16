@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Container, Stack, Typography } from "@mui/material";
+import React, { useState } from "react";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import {
   Navigation,
   Pagination,
@@ -14,7 +14,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 // import "~swiper/swiper-bundle.min.css";
-
+import EastIcon from "@mui/icons-material/East";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { Image } from "mui-image";
 import { Trans, useTranslation } from "react-i18next";
 
@@ -58,6 +59,7 @@ const Services = () => {
         {/* {t("aboutCompany")} */}
         Наши показы
       </Typography>
+
       <Container
         sx={{
           display: "flex",
@@ -124,18 +126,212 @@ const Services = () => {
                     }}
                     alt=""
                   />
-                  <Stack class="overlay"></Stack>
-                  <Stack className="service-desc">
-                    <Typography textAlign="center" fontSize={30}>
-                      {item.title}
-                    </Typography>
-                  </Stack>
                 </Stack>
               </Stack>
             </SwiperSlide>
           ))}
         </Swiper>
       </Container>
+      <Container>
+        <Stack justifyContent="center">
+          <Typography
+            fontSize={{ lg: 30, md: 28, xs: 25 }}
+            mb={1}
+            className="title"
+            textAlign="center"
+          >
+            Хотите принять участие в модном показе?
+          </Typography>
+
+          <Stack
+            direction="row"
+            // width="80%"
+            alignItems="center"
+            flexWrap="wrap"
+            justifyContent={{
+              lg: "center",
+              md: "center",
+              sm: "center",
+              xs: "flex-start",
+            }}
+          >
+            <Stack
+              data-aos-once="true"
+              data-aos="fade-up"
+              textAlign="justify"
+              data-aos-delay="800"
+              color="#d6d6d6"
+              fontSize={15}
+              fontWeight={500}
+              direction="row"
+              alignItems="center"
+            >
+              <Typography
+                fontSize={{ lg: 33, md: 37, xs: 30 }}
+                color="#dbb45a"
+                fontFamily="Poppins"
+                mr={2.5}
+                ml={0.4}
+              >
+                1
+              </Typography>
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 20, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  fontWeight={500}
+                >
+                  Мастер-класс по дефиле Макияж
+                </Typography>
+              </Stack>
+            </Stack>
+            <Stack
+              data-aos-once="true"
+              data-aos="fade-up"
+              textAlign="justify"
+              data-aos-delay="800"
+              color="#d6d6d6"
+              fontSize={15}
+              fontWeight={500}
+              direction="row"
+              alignItems="center"
+            >
+              <Typography
+                fontSize={{ lg: 33, md: 37, xs: 30 }}
+                color="#dbb45a"
+                fontFamily="Poppins"
+                mr={2}
+              >
+                2
+              </Typography>
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 20, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  fontWeight={500}
+                >
+                  Причёска
+                </Typography>
+              </Stack>
+            </Stack>
+            <Stack
+              data-aos-once="true"
+              data-aos="fade-up"
+              textAlign="justify"
+              data-aos-delay="800"
+              color="#d6d6d6"
+              fontSize={15}
+              fontWeight={500}
+              direction="row"
+              alignItems="center"
+            >
+              <Typography
+                fontSize={{ lg: 33, md: 37, xs: 30 }}
+                color="#dbb45a"
+                fontFamily="Poppins"
+                mr={2}
+              >
+                3
+              </Typography>
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 20, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  fontWeight={500}
+                >
+                  Выход на дорожку в образе бренда партнера.
+                </Typography>
+              </Stack>
+            </Stack>
+            <Stack
+              data-aos-once="true"
+              data-aos="fade-up"
+              textAlign="justify"
+              data-aos-delay="800"
+              color="#d6d6d6"
+              fontSize={15}
+              fontWeight={500}
+              direction="row"
+              alignItems="center"
+            >
+              <Typography
+                fontSize={{ lg: 33, md: 37, xs: 30 }}
+                color="#dbb45a"
+                fontFamily="Poppins"
+                mr={2}
+              >
+                4
+              </Typography>
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 20, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  fontWeight={500}
+                >
+                  Фото и видео отчет
+                </Typography>
+              </Stack>
+            </Stack>
+            <Stack
+              data-aos-once="true"
+              data-aos="fade-up"
+              textAlign="justify"
+              data-aos-delay="800"
+              color="#d6d6d6"
+              fontSize={15}
+              fontWeight={500}
+              direction="row"
+              alignItems="center"
+            >
+              <Typography
+                fontSize={{ lg: 33, md: 37, xs: 30 }}
+                color="#dbb45a"
+                fontFamily="Poppins"
+                mr={2}
+              >
+                5
+              </Typography>
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 20, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  fontWeight={500}
+                >
+                  Участие в Fashion мероприятии
+                </Typography>
+              </Stack>
+            </Stack>
+          </Stack>
+        </Stack>
+      </Container>
+
+      <a
+        href="https://wa.me/+79119833108?text=Добрый%20день,%20хочу%20принять%20участие%20в%20модном%20показе,%20свяжитесь со мной."
+        target="_blank"
+        class="gradient-button"
+      >
+        <span className="button-background2"></span>
+        <span className="button-text2">
+          {" "}
+          Записаться на занятие
+          <EastIcon />
+        </span>
+      </a>
     </Box>
   );
 };

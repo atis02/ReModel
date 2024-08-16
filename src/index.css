@@ -13,9 +13,8 @@
 }
 
 .MuiPaper-root.MuiMenu-paper { 
-  background-color: #1d5e9e; 
-  color: #d8d8d8;
-  
+    background:#666666 ;
+  color: #ffffff;
 }
 .input-label:focus{
   color: #000;
@@ -124,7 +123,7 @@
  /* background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,224,255,1) 100%); */
  border: "none";
  border-radius: 25px;
- max-width: 273px;
+ width: 273px;
  color: #fff;
 font-weight:600;
 font-size: 20px;
@@ -138,6 +137,8 @@ font-size: 20px;
 }
 
 .button-background {
+ height: 60;
+ width: 273px;
  position: absolute;
  top: -1px;
  right: 2px;
@@ -164,7 +165,7 @@ font-size: 20px;
   background-size: 400% 100%;
   padding: 0;
   margin: 0;
-  animation: backgroundAnimation 100s ease-in-out infinite
+  animation: backgroundAnimation 1000s ease-in-out infinite
  }
 
 @keyframes backgroundAnimation {
@@ -268,3 +269,114 @@ font-size: 20px;
   bottom: 40%;
   opacity: 1;
 }
+
+
+.gradient-button {
+  background: linear-gradient(-15deg, #1E1E1E, #3c2f51,#1E1E1E);
+  background-size: 400% 100%;
+  animation: backgroundAnimation 12s ease-in-out infinite;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all ease-in 0.1s;
+  border: none;
+  width: 300px;
+
+ cursor: pointer;
+  outline: none;
+  box-shadow: 0 7px #1a1522;
+
+}
+@keyframes backgroundAnimation {
+  50% {
+   background-position: 140% 100%;
+   transform: skew(-2deg)
+  }
+ 
+ }
+.gradient-button:active {
+  box-shadow: 0 2px #1a1522;
+  transform: translateY(3px);
+}
+
+.signup-button{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  width: 300px;
+
+  height: 60;
+
+}
+.gradient-button::after {
+  content: "➔";
+  margin-left: 10px;
+  font-size: 20px;
+}
+.button-text2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right,  #d7c248, #e74d2a);
+  /* background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,224,255,1) 100%); */
+  border: "none";
+  border-radius: 25px;
+  width: 300px;
+
+  color: #fff;
+ font-weight:600;
+ font-size: 20px;
+  text-transform: initial;
+  height: 60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+ }
+ 
+ .button-background2 {
+  height: 60;
+  width: 300px;
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  bottom: 2px;
+  border: "none";
+  left: 2px;
+   border-radius: 45px;
+  background: linear-gradient(-90deg, #007cf0, #00dfd8,#00a8f7,#fff,#ff0080, #007cf0);
+  background-size: 400% 100%;
+  padding: 0;
+  margin: 0;
+  animation: backgroundAnimation 8s ease-in-out infinite
+ }
+ @keyframes backgroundAnimation {
+  50% {
+   background-position: 140% 100%;
+   transform: skew(-2deg)
+  }}
+  .button-background2:after {
+    content: "";
+    position: absolute;
+    background-size: inherit;
+    background-image: inherit;
+    -webkit-animation: inherit;
+    animation: inherit;
+    border: "none";
+    left: 0;
+    right: 0;
+    top: 7px;
+    height: 90%;
+    filter: blur(.9rem)
+   };
+/*  */
+  
+

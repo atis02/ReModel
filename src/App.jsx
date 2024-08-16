@@ -16,6 +16,7 @@ import Services from "./Pages/Services";
 import Licence from "./Pages/Licences";
 import Models from "./Pages/OurWorks";
 import Footer from "./Pages/Footer";
+import Parallax from "./Pages/Parallax";
 import Navbar from "./Components/Navbar/Navbar";
 import { Suspense, useEffect, useState } from "react";
 function App() {
@@ -69,12 +70,18 @@ function App() {
               }}
             >
               <Navbar />
+              {/* <Stack className="videoContainer">
+                <video autoPlay loop muted className="video">
+                  <source src="/public/ModelBg.mp4" type="video/mp4" />
+                </video>
+              </Stack> */}
               <Home />
               <About />
               <Advantages />
               <Missions />
               <Services />
               <Models />
+              {/* <Parallax /> */}
               <Footer />
             </Box>
           </Box>
