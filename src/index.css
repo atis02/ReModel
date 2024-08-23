@@ -58,10 +58,16 @@
   font-weight: 700;
 }
 
-.nav-links2{
+.nav-links{
   text-decoration: none;
-  color: #fff !;
-  font-size: 18px;
+  color:#fff;
+
+}
+.nav-links3{
+  text-decoration: none;
+  background: linear-gradient(to right,  #d7c248, #e54b29) ;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
 }
 .nav-links2:hover{
   background: linear-gradient(to right,  #d7c248, #e54b29) ;
@@ -285,8 +291,9 @@ font-size: 20px;
   display: inline-block;
   transition: all ease-in 0.1s;
   border: none;
-  width: 300px;
+  width:280px;
 
+height: 60px;
  cursor: pointer;
   outline: none;
   box-shadow: 0 7px #1a1522;
@@ -308,7 +315,7 @@ font-size: 20px;
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  width: 300px;
+  width: 350px;
 
   height: 60;
 
@@ -325,16 +332,15 @@ font-size: 20px;
   bottom: 0;
   left: 0;
   background: linear-gradient(to right,  #d7c248, #e74d2a);
-  /* background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,224,255,1) 100%); */
   border: "none";
   border-radius: 25px;
-  width: 300px;
-
   color: #fff;
  font-weight:600;
  font-size: 20px;
   text-transform: initial;
-  height: 60;
+  width:280px;
+  padding: 5px; ;
+  height: 90;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,9 +348,10 @@ font-size: 20px;
   gap: 10px;
  }
  
- .button-background2 {
+  .button-background2 {
   height: 60;
-  width: 300px;
+  width:280px;
+
   position: absolute;
   top: -1px;
   right: 2px;
@@ -357,7 +364,7 @@ font-size: 20px;
   padding: 0;
   margin: 0;
   animation: backgroundAnimation 8s ease-in-out infinite
- }
+ } 
  @keyframes backgroundAnimation {
   50% {
    background-position: 140% 100%;

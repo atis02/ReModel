@@ -43,7 +43,7 @@ const About = () => {
             height={{ lg: 400, md: 350, sm: 300, xs: 250 }}
           >
             <img
-              src="/images/about2.png"
+              src="/images/About.png"
               style={{
                 width: "100%",
                 height: "100%",
@@ -55,7 +55,7 @@ const About = () => {
             width={{ lg: 560, xs: "100%" }}
             height={145}
             spacing={2}
-            mt={{ lg: 0, md: 1, xs: 1 }}
+            mt={{ lg: 5, md: 1, xs: 1 }}
           >
             <Typography
               fontSize={24}

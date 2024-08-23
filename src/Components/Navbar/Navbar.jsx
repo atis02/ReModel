@@ -64,7 +64,7 @@ const Navbar = () => {
       p={{
         lg: "10px 185px 0 185px",
         md: "5px 100px 0 100px",
-        xs: "4px 20px 0 20px",
+        xs: "4px 20px 10px 20px",
       }}
       sx={{
         ...(scrolled
@@ -81,12 +81,12 @@ const Navbar = () => {
       }}
     >
       <Stack
-        width={{ lg: 86, md: 80, sm: 70, xs: 50 }}
+        width={{ lg: 70, md: 80, sm: 70, xs: 55 }}
         height={{ lg: 80, md: 75, sm: 70, xs: 55 }}
       >
         <a href="/">
           <img
-            src="/images/Log.png"
+            src="/images/ReModel.jpg"
             style={{ width: "100%", height: "100%", pt: 5 }}
             alt="LOGO"
           />
@@ -107,9 +107,7 @@ const Navbar = () => {
         <a className="nav-links2" href="#Advantages">
           {t("advantagesNav")}
         </a>
-        <a className="nav-links2" href="#Feedback">
-          Отзывы
-        </a>
+
         <a className="nav-links2" href="#pokaz">
           Показы
         </a>
@@ -151,7 +149,9 @@ const Navbar = () => {
         onClose={toggleMobileMenu}
         sx={{
           "& .MuiDrawer-paper": {
-            width: "100%",
+            width: "60%",
+            backgroundColor: "transparent",
+            backdropFilter: "blur(5px)",
           },
         }}
       >
@@ -160,7 +160,7 @@ const Navbar = () => {
           sx={{
             bg: "#fff",
             height: "100%",
-            mt: "220px",
+            mt: "150px",
             padding: "16px 0",
           }}
         >
@@ -170,7 +170,7 @@ const Navbar = () => {
             height="35px"
             alignItems="center"
           >
-            <Button sx={{ color: "currentColor" }} onClick={toggleMobileMenu}>
+            <Button sx={{ color: "#fff" }} onClick={toggleMobileMenu}>
               <svg
                 fillRule="evenodd"
                 viewBox="64 64 896 896"
@@ -185,29 +185,48 @@ const Navbar = () => {
               </svg>
             </Button>
             <Stack direction="column" alignItems="center" spacing={2}>
-              <a className="nav-links2" href="#aboutCompany">
+              <a
+                className="nav-links3"
+                onClick={() => setMobileMenuOpen(false)}
+                href="#aboutCompany"
+              >
                 {t("aboutCompany")}
               </a>
-              <a className="nav-links2" href="#Advantages">
+              <a
+                className="nav-links3"
+                onClick={() => setMobileMenuOpen(false)}
+                href="#Advantages"
+              >
                 {t("advantages")}
               </a>
-              <a className="nav-links2" href="#Goals">
-                {" "}
-                {t("goals")}
+
+              <a
+                className="nav-links3"
+                onClick={() => setMobileMenuOpen(false)}
+                href="#pokaz"
+              >
+                Показы
               </a>
-              <a className="nav-links2" href="#Services">
-                {" "}
-                {t("services")}
+              <a
+                className="nav-links3"
+                onClick={() => setMobileMenuOpen(false)}
+                href="#Models"
+              >
+                {/* {t("ourWorks")} */}
+                Модели
               </a>
-              <a className="nav-links2" href="#Licences">
-                {" "}
-                {t("licences")}
+              <a
+                className="nav-links3"
+                onClick={() => setMobileMenuOpen(false)}
+                href="#Goals"
+              >
+                Программа обучения
               </a>
-              <a className="nav-links2" href="#OurWorks">
-                {" "}
-                {t("ourWorks")}
-              </a>
-              <a className="nav-links2" href="#Footer">
+              <a
+                className="nav-links3"
+                onClick={() => setMobileMenuOpen(false)}
+                href="#Footer"
+              >
                 {t("contacts")}
               </a>
             </Stack>

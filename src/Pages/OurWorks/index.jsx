@@ -24,7 +24,6 @@ const Models = () => {
   const slideData = [
     { title: "Анна ", src: "/images/models (3).jpg" },
     { title: "Виктория", src: "/images/models (4).jpg" },
-
     { title: "Анастасия", src: "/images/KIdModels (1).jpg" },
     { title: " Алина", src: "/images/KIdModels (2).jpg" },
     { title: " Полина", src: "/images/KIdModels (3).jpg" },

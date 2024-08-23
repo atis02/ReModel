@@ -55,7 +55,7 @@ const Advantages = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Stack
+          {/* <Stack
             sx={{
               width: "80%",
               height: "80%",
@@ -70,7 +70,7 @@ const Advantages = () => {
               src="/images/boyModel.png"
               alt=""
             />
-          </Stack>
+          </Stack> */}
           <Stack
             width={{ lg: "88%", md: "70%", sm: "75%", xs: "100%" }}
             spacing={2}
@@ -147,9 +147,9 @@ const Advantages = () => {
                 >
                   {t("advText2")}
                 </Typography>
-                Улучшит свои коммуникативные навыки и станет более уверенным в
-                себе . Это поможет ему не только в модельной карьере, но и в
-                повседневной жизни
+                Научится уверенно выступать перед публикой и самопрезентовать
+                себя. Это повлияет на его дальнейшее развитие и в профессии и в
+                жизни
               </Stack>
             </Stack>
             <Stack

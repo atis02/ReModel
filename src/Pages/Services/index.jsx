@@ -328,7 +328,7 @@ const Services = () => {
         <span className="button-background2"></span>
         <span className="button-text2">
           {" "}
-          Записаться на занятие
+          Записаться на Fashion Day
           <EastIcon />
         </span>
       </a>

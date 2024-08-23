@@ -16,6 +16,7 @@ import Services from "./Pages/Services";
 import Licence from "./Pages/Licences";
 import Models from "./Pages/OurWorks";
 import Footer from "./Pages/Footer";
+import OutWorksVideo from "./Pages/OurWorksVideo";
 import Parallax from "./Pages/Parallax";
 import Navbar from "./Components/Navbar/Navbar";
 import { Suspense, useEffect, useState } from "react";
@@ -81,6 +82,7 @@ function App() {
               <Missions />
               <Services />
               <Models />
+              <OutWorksVideo />
               {/* <Parallax /> */}
               <Footer />
             </Box>
