@@ -162,7 +162,7 @@ const Home = () => {
             justifyContent={{ lg: "flex-end" }}
             // pt={4}
           >
-            <img
+            {/* <img
               src="/images/about.png"
               style={{
                 width: "80%",
@@ -170,7 +170,7 @@ const Home = () => {
                 borderRadius: "100px",
               }}
               alt="aa"
-            />
+            /> */}
           </Stack>
         </Stack>
       </Box>
