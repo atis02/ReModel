@@ -74,7 +74,8 @@ const Footer = () => {
                   fontFamily: "Montserrat",
                   fontWeight: 500,
                 }}
-                href="https://t.me/maerezak"
+                target="_blank"
+                href="https://t.me/rezakelena"
               >
                 <svg
                   class="t-sociallinks__svg"
@@ -105,6 +106,7 @@ const Footer = () => {
             >
               <a
                 style={{ textDecoration: "none", color: "#fff" }}
+                target="_blank"
                 href="https://vk.com/artagentsvoremodel"
               >
                 <svg
@@ -135,6 +137,7 @@ const Footer = () => {
               spacing={1}
             >
               <a
+                target="_blank"
                 style={{ textDecoration: "none", color: "#fff" }}
                 href="https://www.instagram.com/_elena_rezak?igsh=MWZqNWgzbG9ia28xdg=="
               >
@@ -171,7 +174,8 @@ const Footer = () => {
                   fontFamily: "Montserrat",
                   fontWeight: 500,
                 }}
-                href=" 89119833108"
+                href="https://wa.me/89119833108"
+                target="_blank"
               >
                 <svg
                   fill="#000000"
