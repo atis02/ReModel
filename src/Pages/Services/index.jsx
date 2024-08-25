@@ -203,7 +203,8 @@ const Services = () => {
                 fontSize={{ lg: 33, md: 37, xs: 30 }}
                 color="#dbb45a"
                 fontFamily="Poppins"
-                mr={2}
+                mr={2.5}
+                ml={0.4}
               >
                 2
               </Typography>
@@ -216,7 +217,7 @@ const Services = () => {
                   pl={0.5}
                   fontWeight={500}
                 >
-                  Причёска
+                  Макияж
                 </Typography>
               </Stack>
             </Stack>
@@ -248,7 +249,7 @@ const Services = () => {
                   pl={0.5}
                   fontWeight={500}
                 >
-                  Выход на дорожку в образе бренда партнера.
+                  Причёска
                 </Typography>
               </Stack>
             </Stack>
@@ -280,7 +281,7 @@ const Services = () => {
                   pl={0.5}
                   fontWeight={500}
                 >
-                  Фото и видео отчет
+                  Выход на дорожку в образе бренда партнера.
                 </Typography>
               </Stack>
             </Stack>
@@ -302,6 +303,38 @@ const Services = () => {
                 mr={2}
               >
                 5
+              </Typography>
+              <Stack>
+                <Typography
+                  fontSize={{ lg: 20, md: 17, xs: 15 }}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={2.9}
+                  pl={0.5}
+                  fontWeight={500}
+                >
+                  Фото и видео отчет
+                </Typography>
+              </Stack>
+            </Stack>
+            <Stack
+              data-aos-once="true"
+              data-aos="fade-up"
+              textAlign="justify"
+              data-aos-delay="800"
+              color="#d6d6d6"
+              fontSize={15}
+              fontWeight={500}
+              direction="row"
+              alignItems="center"
+            >
+              <Typography
+                fontSize={{ lg: 33, md: 37, xs: 30 }}
+                color="#dbb45a"
+                fontFamily="Poppins"
+                mr={2}
+              >
+                6
               </Typography>
               <Stack>
                 <Typography

@@ -288,9 +288,9 @@ const Footer = () => {
               <Typography fontFamily="Montserrat" fontWeight={500}>
                 <a
                   style={{ textDecoration: "none", color: "#fff" }}
-                  href="mailto:info@altynmiras.com"
+                  href="mailto:rezakelena@gmail.com"
                 >
-                  info@ReModel.com
+                  rezakelena@gmail.com
                 </a>
               </Typography>
             </Stack>
@@ -318,7 +318,8 @@ const Footer = () => {
                   fontFamily: "Montserrat",
                   fontWeight: 500,
                 }}
-                href="https://t.me/maerezak"
+                href="https://t.me/rezakelena"
+                target="_blank"
               >
                 <svg
                   class="t-sociallinks__svg"
@@ -350,6 +351,7 @@ const Footer = () => {
               <a
                 style={{ textDecoration: "none", color: "#fff" }}
                 href="https://vk.com/artagentsvoremodel"
+                target="_blank"
               >
                 <svg
                   class="t-sociallinks__svg"
@@ -381,6 +383,7 @@ const Footer = () => {
               <a
                 style={{ textDecoration: "none", color: "#fff" }}
                 href="https://www.instagram.com/_elena_rezak?igsh=MWZqNWgzbG9ia28xdg=="
+                target="_blank"
               >
                 <svg
                   class="t-sociallinks__svg"
@@ -416,7 +419,8 @@ const Footer = () => {
                   fontFamily: "Montserrat",
                   fontWeight: 500,
                 }}
-                href=" 89119833108"
+                target="_blank"
+                href="https://wa.me/89119833108"
               >
                 <svg
                   fill="#000000"

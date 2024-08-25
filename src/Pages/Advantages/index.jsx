@@ -45,7 +45,7 @@ const Advantages = () => {
           >
             {/* {t("advantages")}
              */}
-            После занятий в REmodel Ваш ребенок получит :
+            За это время ученики успевают приобрести :
           </Typography>
         </Stack>
         <Stack
