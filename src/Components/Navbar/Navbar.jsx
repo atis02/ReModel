@@ -192,13 +192,8 @@ const Navbar = () => {
               >
                 {t("aboutCompany")}
               </a>
-              <a
-                className="nav-links3"
-                onClick={() => setMobileMenuOpen(false)}
-                href="#Advantages"
-              >
-                {t("advantages")}
-              </a>
+     
+         
 
               <a
                 className="nav-links3"

@@ -43,7 +43,7 @@ const About = () => {
             height={{ lg: 400, md: 350, sm: 300, xs: 250 }}
           >
             <img
-              src="/images/About.png"
+              src="/images/about.png"
               style={{
                 width: "100%",
                 height: "100%",
