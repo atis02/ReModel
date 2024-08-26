@@ -184,7 +184,7 @@ const Services = () => {
                   pl={0.5}
                   fontWeight={500}
                 >
-                  Мастер-класс по дефиле Макияж
+                  Мастер-класс по дефиле
                 </Typography>
               </Stack>
             </Stack>
